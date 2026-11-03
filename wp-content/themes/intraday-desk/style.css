@@ -91,3 +91,19 @@ a{text-underline-offset:3px}
 .wp-block-navigation__responsive-container.is-menu-open{background:var(--id-bg)!important}
 .entry-content .id-up strong,.entry-content .id-down strong{color:inherit}
 html{scroll-padding-top:90px}
+/* Header menu */
+.id-menu{position:relative;flex:none}
+.id-menu__toggle{display:flex;align-items:center;justify-content:center;width:40px;height:40px;margin:0;padding:0;border:1px solid var(--id-border);border-radius:10px;background:transparent;color:var(--id-text);cursor:pointer}
+.id-menu__toggle:hover,.id-menu__toggle[aria-expanded="true"]{background:var(--id-surface-2)}
+.id-menu__toggle svg{display:block;width:24px;height:24px;fill:currentColor}
+.id-menu__panel{position:absolute;top:calc(100% + 8px);right:0;z-index:80;box-sizing:border-box;width:min(280px,calc(100vw - 2 * var(--wp--preset--spacing--50)));padding:8px;background:var(--id-surface);border:1px solid var(--id-border);border-radius:var(--id-radius);box-shadow:var(--id-shadow)}
+.id-menu__panel[hidden]{display:none}
+.id-menu__list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.id-menu__list a,.id-menu__social a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:8px;color:var(--id-text);text-decoration:none;font-weight:500}
+.id-menu__list a:hover,.id-menu__list a:focus-visible,.id-menu__social a:hover,.id-menu__social a:focus-visible{background:var(--id-surface-2);color:#fff}
+.id-menu__social{display:flex;flex-direction:column;gap:2px;margin-top:8px;padding-top:8px;border-top:1px solid var(--id-border)}
+.id-menu__social a{color:var(--id-muted);font-size:.92rem;font-weight:500}
+.id-menu__social svg{flex:none;display:block}
+#what-you-can-learn{margin-top:1.75rem}
+#what-you-can-learn h2{margin-top:0}
+#main-idea,#what-you-can-learn{scroll-margin-top:90px}
